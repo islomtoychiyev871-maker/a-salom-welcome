@@ -142,3 +142,33 @@
     color: var(--color-foreground);
   }
 }
+
+/* Placement-test brand: deep ink surface, warm amber accent */
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.17 0.03 265);
+  --foreground: oklch(0.97 0.01 250);
+  --card: oklch(0.22 0.035 265);
+  --card-foreground: oklch(0.97 0.01 250);
+  --popover: oklch(0.22 0.035 265);
+  --popover-foreground: oklch(0.97 0.01 250);
+  --primary: oklch(0.8 0.16 78);
+  --primary-foreground: oklch(0.2 0.04 265);
+  --secondary: oklch(0.27 0.04 265);
+  --secondary-foreground: oklch(0.97 0.01 250);
+  --muted: oklch(0.27 0.04 265);
+  --muted-foreground: oklch(0.72 0.03 258);
+  --accent: oklch(0.58 0.13 200);
+  --accent-foreground: oklch(0.98 0.01 250);
+  --destructive: oklch(0.62 0.21 25);
+  --destructive-foreground: oklch(0.98 0.01 250);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.8 0.16 78);
+}
+
+@utility ink-grid {
+  background-image:
+    radial-gradient(circle at 15% 10%, oklch(0.8 0.16 78 / 14%), transparent 45%),
+    radial-gradient(circle at 85% 0%, oklch(0.58 0.13 200 / 16%), transparent 45%);
+}
